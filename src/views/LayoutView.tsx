@@ -1,7 +1,5 @@
 import React from "react";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { Layout, Avatar } from "antd";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { UserOutlined } from "@ant-design/icons";
 
 const { Header, Footer, Sider, Content } = Layout;

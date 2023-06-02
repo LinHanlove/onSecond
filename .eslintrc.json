@@ -27,6 +27,8 @@
     "unicorn"
   ],
   "rules": {
+    "no-console": "off",
+    "import/no-extraneous-dependencies": "off",
     "react/jsx-filename-extension": "off",
     "import/prefer-default-export": "off",
     "import/extensions": [
@@ -39,5 +41,16 @@
         "tsx": "never"
       }
     ]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "./tsconfig.json"
+      }
+    }
   }
 }

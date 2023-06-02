@@ -1,18 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import { StyleProvider } from "@ant-design/cssinjs";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { StyleProvider } from "@ant-design/cssinjs";
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <StyleProvider hashPriority="high">
+  <StyleProvider hashPriority="high">
+    <React.StrictMode>
       <App />
-    </StyleProvider>
-  </React.StrictMode>
+    </React.StrictMode>
+  </StyleProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
